@@ -71,10 +71,10 @@ if username:
                 st.session_state.quiz_started = False  # Optionally reset the quiz state
                 st.success(f"You have submitted the challenge! Your score: {score}/{len(user_answers)}. Total time taken: {duration}")
                 save_results(username, score, duration)
-                leaderboard_df = display_leaderboard()
-                if not leaderboard_df.empty:
-                    st.write("Leaderboard:", leaderboard_df)
-                else:
-                    st.write("Leaderboard is currently empty.")
+leaderboard_df = display_leaderboard()
+if not leaderboard_df.empty:
+    st.write("Leaderboard:", leaderboard_df)
+else:
+    st.write("Leaderboard is currently empty.")
 
 
