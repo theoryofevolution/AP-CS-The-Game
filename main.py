@@ -50,7 +50,7 @@ if 'selected_questions' not in st.session_state or st.button("Reload Questions")
 st.markdown("<h1 style='text-align: center; '>AP CS: The Game</h1>", unsafe_allow_html=True)
 username = st.text_input("Enter a username to start challenge (This will be your username on the leaderboard)")
 if username:
-    st.write("""The challenge consists of 5 random questions picked from the database. You have unlimited time, so feel free to spend as much time as you want on each question. But do know, the person who gets the most questions right in the least amount of time gets the top place on the leaderboard. Your goal is to complete these questions as fast as you can. Take a piece of paper to begin Click the button to begin the challenge.""")
+    st.write("""The challenge consists of 5 random questions picked from the database. You have unlimited time, so feel free to spend as much time as you want on each question. But do know, the person who gets the most questions right in the least amount of time gets the top place on the leaderboard. Your goal is to complete these questions as fast as you can. Take a scratch piece of paper, get comfortable, and click the button to begin the challenge.""")
 
     if st.button("Begin Challenge"):
         st.session_state.quiz_started = True
